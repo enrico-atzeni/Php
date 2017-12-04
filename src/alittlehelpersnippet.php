@@ -9,7 +9,7 @@
 
 
 <?php /* A LITTLE HELPER SNIPPET GENERAL */
-global $memoryFUNC;
+global $memoryFUNC,$microTimePre;
 if(!$memoryFUNC)
 	$memoryFUNC = array();
 $SUPER_DEBUG_CONT = isset($SUPER_DEBUG_CONT) ? $SUPER_DEBUG_CONT+1 : 0;
@@ -27,7 +27,7 @@ array_push($memoryFUNC, $thisVal);
 
 
 <?php /* A LITTLE HELPER SNIPPET FOR WordPress */
-global $memoryFUNC;
+global $memoryFUNC,$microTimePre;
 if(!$memoryFUNC)
 	$memoryFUNC = array();
 $SUPER_DEBUG_CONT = isset($SUPER_DEBUG_CONT) ? $SUPER_DEBUG_CONT+1 : 0;
