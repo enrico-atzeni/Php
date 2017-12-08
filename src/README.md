@@ -3,6 +3,7 @@ Some php usefull scripts
 
 # A Little Helper Snippet
 Source file: `alittlehelpersnippet.php`
+
 These snippets allows you to debug your php code to find bottlenecks easily.
 
 #### How it works:
