@@ -2,17 +2,18 @@
 Some php usefull scripts
 
 # A Little Helper Snippet
+Source file: `alittlehelpersnippet.php`
 These snippets allows you to debug your php code to find bottlenecks easily.
 
 #### How it works:
 Inside the file there are 3 snippet of code, divided into 2 sections: **data getter code** and **data output code**.
 
-#####Data getter code
+##### Data getter code
 Data getter code section contains 2 snippet of code, one generalized for any PHP environment, and one specified for use in a WordPress theme/plugin.
 You need to insert this snippet at least 2 times in all of your PHP-included files. 
 To get better results I suggest you to insert it at least every 5-10 function calls.
 
-######Generalized
+###### Generalized
 ```
 /* A LITTLE HELPER SNIPPET GENERAL */
 global $memoryFUNC,$microTimePre;
@@ -29,7 +30,7 @@ array_push($memoryFUNC, $thisVal);
 /* / A LITTLE HELPER SNIPPET GENERAL */
 ```
 
-######For WordPress
+###### For WordPress
 ```
 /* A LITTLE HELPER SNIPPET FOR WordPress */
 global $memoryFUNC,$microTimePre;
@@ -46,7 +47,7 @@ array_push($memoryFUNC, $thisVal);
 /* / A LITTLE HELPER SNIPPET FOR WordPress */
 ```
 
-#####Data output code
+##### Data output code
 Data output code is the code needed in order to print out the debugging infos
 ```
 global $memoryFUNC;
